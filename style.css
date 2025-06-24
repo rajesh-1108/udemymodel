@@ -12,6 +12,11 @@ body{
     border-bottom: solid black 1px;
     gap: 10px;
      align-items: center;
+     position: sticky;
+     top: 0;
+   background-color: white; 
+   z-index: 1;
+   
 
 }
 .navbar__s1__title{
@@ -43,6 +48,28 @@ body{
     gap: 10px;
      align-items: center;
 }
+.navbar__s3__dropdown
+{
+    position: relative;
+    cursor: pointer;
+}
+.navbar__s3__dropdown__content
+
+{
+   top: 150%;
+   border: solid black 1px;
+width: 100px;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    right: 0;
+    display: none;
+    
+}
+.navbar__s3__dropdown:hover .navbar__s3__dropdown__content
+{
+    display: block;
+}
 .categories
 {
     display: flex;padding: 10px;
@@ -58,6 +85,31 @@ body{
 .sale__img img
 {
     width:100%;
+  
+}
+.sale__img
+{
+    position: relative;
+    
+}
+.sale__img__content
+{
+    background-color: white;
+    position: absolute;
+    border:solid black 2px;
+    width: 35%;
+    padding: 10px;
+    top: 10%;
+    left: 5%;
+}
+.sale__img__btn
+{
+    background-color: #A435F0;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }
 .recommended
 {
@@ -130,4 +182,8 @@ color: white;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
+}
+.footer_two p
+{
+    color: #A435F0;
 }
