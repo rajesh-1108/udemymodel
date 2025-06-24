@@ -14,8 +14,8 @@ body{
      align-items: center;
      position: sticky;
      top: 0;
-   background-color: white; 
-   z-index: 1;
+     background-color: white; 
+     z-index: 1;
    
 
 }
@@ -69,6 +69,11 @@ width: 100px;
 .navbar__s3__dropdown:hover .navbar__s3__dropdown__content
 {
     display: block;
+}
+.navbar__s4
+{
+    display: none;
+   
 }
 .categories
 {
@@ -124,8 +129,12 @@ width: 100px;
 }
 .course-card
 {
-    width:250px;
+     flex-basis: 20%;
+     flex-grow: 1;
+     margin: 5px;
 }
+
+
 .course-card img
 {
    width: 100%;
@@ -186,4 +195,33 @@ color: white;
 .footer_two p
 {
     color: #A435F0;
+}
+@media  screen and (max-width: 800px)
+ {
+ body{
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 600px)
+ {
+    .course-card
+    {
+        flex-basis: 40%;
+       
+    }
+    .categories
+    {
+        display: none;
+    }
+    .navbar__s2,.navbar__s3
+    {
+       display: none;
+    }
+    .navbar__s4
+     {
+    display: block;
+   
+     }
+  
+    
 }
